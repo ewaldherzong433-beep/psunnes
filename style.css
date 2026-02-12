@@ -11,17 +11,16 @@ a {
 
 :root {
     --font1: "varela";
-    --font2: "Droid Sans"
-        --black: #000;
+    --font2: "Droid Sans";
+    --black: #000;
     --white: #fff;
 }
 
-html,
-body {
-    width: 1280px;
+html, body {
+    width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
@@ -37,10 +36,10 @@ body {
 }
 
 /* NAVBAR */
-.navbar {
-    background: #1a1a1a;
-    height: 109px;
-
+.container {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .nav-content {
@@ -122,14 +121,14 @@ body {
 
 /* ABOUT */
 .about {
-    background-image: url('./img/Rectangle\ 126.png');
+    background-image: url('./img/Rectangle\ 126.svg');
     background-repeat: repeat;
     display: flex;
     gap: 50px;
     padding: 80px 0;
     align-items: center;
     position: relative;
-    overflow: hidden;
+
 }
 
 .abouttop {
@@ -255,6 +254,7 @@ body {
     grid-column: span 2 / span 2;
     grid-column-start: 3;
     grid-row-start: 3;
+    padding: 20px;
 }
 
 .div7 {
@@ -295,7 +295,7 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin: 0 37vw;
+    margin: 0 475px;
     padding: 15px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -309,8 +309,9 @@ body {
 }
 
 .facility-item {
-    background: #fff;
-    padding: 30px;
+    background: rgba(250, 250, 250, 0.5);
+    margin: 28px;
+    padding: 2px;
     border-radius: 10px;
     font-weight: 600;
     font-family: var(--font2);
@@ -318,19 +319,30 @@ body {
 
 /* GALLERY */
 .gallery {
-    padding: 80px 0;
+
     text-align: center;
     height: 50vw;
+}
+
+.gallery h2 {
+    font-family: var(--font2);
+    color: #212121;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .gallery-grid {
     display: flex;
     gap: 30px;
     margin-top: 40px;
+    justify-content: center;
 }
 
 .gallery-item img {
-    width: 100%;
+    width: 80%;
     border-radius: 10px;
 }
 
@@ -340,16 +352,41 @@ body {
     border-radius: 20px;
     border: none;
     cursor: pointer;
+    font-family: var(--font2);
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 /* CTA */
 .cta {
-    background: url("cta.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url("./img/bgcta.png    ") no-repeat;
+
     padding: 100px 20px;
     text-align: center;
+    height: 40vw;
+}
+
+.cta-content h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: var(--font1);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 120px;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 .cta button {
+    font-size: 20px;
+    font-family: var(--font1);
     margin-top: 20px;
     padding: 12px 30px;
     border-radius: 25px;
@@ -360,14 +397,39 @@ body {
 
 /* LOCATION */
 .location {
+    background-color: var(--white);
+    font-family: var(--font2);
     padding: 80px 0;
     text-align: center;
+    padding: 100px;
 }
 
 .location img {
     width: 100%;
     margin: 30px 0;
     border-radius: 15px;
+}
+
+.location h2 {
+    color: #212121;
+    text-align: center;
+    font-family: "Droid Sans";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.location button {
+    font-size: 20px;
+    font-family: var(--font1);
+    margin-top: 20px;
+    padding: 12px 30px;
+    border-radius: 25px;
+    border: none;
+    background: var(--black);
+    color: var(--white);
+    cursor: pointer;
 }
 
 /* FOOTER */
@@ -378,5 +440,327 @@ footer {
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    color: var(--white);
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer-content ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.footer-content p {
+    text-align: center;
+    color: #FFF;
+    text-align: justify;
+    font-family: var(--font2);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 20px;
+
+}
+
+.footer-content a {
+    color: #FFF;
+    text-align: justify;
+    font-family: Varela;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px;
+}
+
+
+.footer-content asd {
+    display: inline;
+    margin: 20px;
+    word-spacing: 20px;
+}
+
+
+@media (min-width: 1440px) {
+
+    .container {
+        max-width: 1400px;
+    }
+
+    .hero h1 {
+        font-size: 72px;
+    }
+
+    .about-text p {
+        font-size: 26px;
+    }
+
+    .cta-content h2 {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .discover {
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .facility-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .h2box {
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .cta {
+        height: auto;
+        padding: 80px 20px;
+    }
+
+    .cta-content h2 {
+        padding: 0 40px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    /* ========== GLOBAL ========== */
+    section {
+        padding: 60px 20px !important;
+        height: auto !important;
+    }
+
+    h2 {
+        font-size: 24px !important;
+    }
+
+    p {
+        font-size: 16px !important;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* ========== NAVBAR ========== */
+    .navbar {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .nav-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+    }
+
+    .logo img {
+        height: 70px;
+    }
+
+    /* ========== VIDEO ========== */
+    .video-section {
+        height: 50vh;
+    }
+
+    /* ========== HERO ========== */
+    .hero {
+        height: 50vh;
+    }
+
+    /* ========== ABOUT SECTION (STACKED) ========== */
+    .about {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        background-size: cover;
+    }
+
+    .abouttop,
+    .bg-img1 {
+        display: none; /* remove decorative elements */
+    }
+
+    .about-text {
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+
+    .about-text h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .about-image img {
+        border-radius: 15px;
+    }
+
+    /* ========== DISCOVER (SIMPLIFIED GRID) ========== */
+    .discover {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .parent {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .div1 h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .div2 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .div4 img,
+    .div14 img,
+    .div15 img,
+    .div16 img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .div7 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .discover button {
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* ========== FACILITY ========== */
+    .facility {
+        padding: 60px 20px;
+    }
+
+    .h2box {
+        width: 100%;
+        margin: 0 auto 30px auto;
+        font-size: 22px;
+        border-radius: 15px;
+    }
+
+    .facility-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .facility-item {
+        margin: 0;
+        padding: 15px;
+    }
+
+    /* ========== GALLERY ========== */
+    .gallery {
+        padding: 60px 20px;
+    }
+
+    .gallery-grid {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .gallery-item img {
+        width: 100%;
+    }
+
+    .gallery-item button {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    /* ========== CTA ========== */
+    .cta {
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    .cta-content h2 {
+        padding: 0;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .cta button {
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* ========== LOCATION ========== */
+    .location {
+        padding: 60px 20px;
+    }
+
+    .location img {
+        width: 100%;
+    }
+
+    .location h2 {
+        font-size: 18px;
+    }
+
+    .location button {
+        width: 100%;
+    }
+
+    /* ========== FOOTER ========== */
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
 }
