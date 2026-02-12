@@ -4,16 +4,9 @@
     box-sizing: border-box;
 }
 
-:root {
-    --font1: "varela";
-    --font2: "Droid Sans";
-    --black: #000;
-    --white: #fff;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background: #fff;
+    background: #f2f2f2;
     color: #222;
 }
 
@@ -23,55 +16,76 @@ body {
     margin: auto;
 }
 
-/* ================= NAVBAR ================= */
-/*call from main.css*/
+/* NAVBAR */
+/* calling from main.css*/
 .navbar {
     background-color: var(--black);
-    
+
 }
 
-/* ================= EXTERIOR SECTION ================= */
-
-.exterior-section {
+/* INTERIOR SECTION */
+.interior {
     padding: 80px 0;
     text-align: center;
 }
 
 .section-title {
-    color: #000;
-    text-align: center;
-    font-family: var(--font2);
     font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-bottom: 60px;
+    margin-bottom: 40px;
 }
 
-.exterior-section h2 {
-    color: #000;
-    text-align: center;
-    font-family: var(--font2);
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.main-image img {
+img {
     width: 100%;
-    border-radius: 15px;
-    margin-bottom: 30px;
+    border-radius: 18px;
 }
 
-.exterior-section h2 {
-    margin-top: 20px;
-    margin-bottom: 15px;
+/* GRID LAYOUTS */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 25px;
 }
 
-.description {
-    max-width: 800px;
-    margin: 0 auto 40px;
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.small-gap {
+    margin-top: 10px;
+}
+
+.full-image {
+    margin: 30px 0;
+}
+
+.pool-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    margin: 40px 0;
+}
+
+/* TEXT */
+h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #000;
+    text-align: center;
+    font-family: "Droid Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.desc {
+    max-width: 750px;
+    margin: 0 auto 30px;
     line-height: 1.7;
     color: #000;
     text-align: center;
@@ -82,24 +96,14 @@ body {
     line-height: normal;
 }
 
+.left {
+    text-align: left;
+}
+
 hr {
-    margin: 40px auto;
-    width: 100%;
     border: none;
     border-top: 1px solid #ccc;
-}
-
-/* 2 Image Grid */
-.grid-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-bottom: 30px;
-}
-
-.grid-2 img {
-    width: 100%;
-    border-radius: 15px;
+    margin: 50px 0;
 }
 
 /* Full Image */
@@ -133,17 +137,15 @@ hr {
     margin-top: 20px;
 }
 
-/* ================= CTA ================= */
-/* ================= Location ================= */
-/* ================= footer ================= */
-/* those 3 calling from main.css */
+/* CTA */
 
 
-/* ================= RESPONSIVE ================= */
-
+/* RESPONSIVE */
 @media (max-width: 768px) {
 
-    .grid-2 {
+    .grid-2,
+    .grid-3,
+    .pool-grid {
         grid-template-columns: 1fr;
     }
 
