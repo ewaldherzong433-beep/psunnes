@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --font1: "varela";
+    --font2: "Droid Sans"
+        --black: #000;
+    --white: #fff;
+}
+
+html,
+body {
+    width: 1280px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
+body {
+    background: #111;
+}
+
+.container {
+    width: 100%;
+
+    margin: auto;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #1a1a1a;
+    height: 109px;
+
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.logo img {
+    height: 130px;
+    /* adjust if needed */
+    width: auto;
+    display: block;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.btn-contact {
+    background: #fff;
+    color: #000 !important;
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+
+/* VIDEO SECTION */
+.video-section {
+    width: 100%;
+    height: 80vh;
+    /* You can change to 60vh or 100vh */
+    overflow: hidden;
+    position: relative;
+}
+
+.video-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Makes it fill like background-image */
+}
+
+
+
+
+/* HERO */
+.hero {
+    height: 80vh;
+    background: url("./img/hero.webp") center/cover no-repeat;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* ABOUT */
+.about {
+    background-image: url('./img/Rectangle\ 126.png');
+    background-repeat: repeat;
+    display: flex;
+    gap: 50px;
+    padding: 80px 0;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.abouttop {
+    position: absolute;
+    top: -59px;
+    left: -30%;
+    width: 347px;
+    height: 59px;
+}
+
+.bg-img1 {
+    transform: scale(0.5);
+    opacity: 35%;
+    position: absolute;
+    left: -500px;
+
+}
+
+.about-text {
+    margin-left: 200px;
+    width: 490px;
+    height: 355px;
+}
+
+.about-text h3 {
+    color: #212121;
+    font-family: "Droid Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.about-text p {
+    color: #212121;
+    text-align: justify;
+    font-family: Varela;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+.about img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+/* DISCOVER */
+.discover {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./img/bgcDiscover.svg") lightgray 50% center/cover no-repeat;
+
+    display: flex;
+    padding: 80px 0;
+    height: 120vh;
+
+
+}
+
+.discover-content {
+    display: flex;
+    color: var(--white);
+    filter: brightness(100%);
+}
+
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 0.5fr);
+    grid-template-rows: repeat(3, 0.4fr);
+    gap: 4px;
+    justify-items: left;
+    margin: 0 7vw;
+}
+
+.div1 {
+    grid-column: span 2 / span 2;
+    color: #FFF;
+    text-align: justify;
+    font-family: "Droid Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 3;
+    margin-bottom: 80px;
+
+    color: #FFF;
+    text-align: justify;
+    font-family: Varela;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-row-start: 2;
+}
+
+.div14 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.div15 {
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+.div16 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.div7 {
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+
+.discover button {
+    font-family: var(--font2);
+    margin-top: 15px;
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.bg-img2 {
+    background: linear-gradient(rgba(250, 250, 250, 0.6), rgba(250, 250, 250, 0.6)), url("./img/bgcDiscover.svg") lightgray 50% center/cover no-repeat;
+
+}
+
+/* FACILITY */
+.facility {
+    color: #000;
+
+    text-align: center;
+    height: 50vw;
+}
+
+.h2box {
+    background-color: #555555;
+    color: #FFF;
+    text-align: center;
+    font-family: var(--font2);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 37vw;
+    padding: 15px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.facility-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.facility-item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+/* GALLERY */
+.gallery {
+    padding: 80px 0;
+    text-align: center;
+    height: 50vw;
+}
+
+.gallery-grid {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gallery-item button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* CTA */
+.cta {
+    background: url("cta.jpg") center/cover no-repeat;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.cta button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border-radius: 25px;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+}
+
+/* LOCATION */
+.location {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.location img {
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 15px;
+}
+
+/* FOOTER */
+footer {
+    background: #1a1a1a;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
