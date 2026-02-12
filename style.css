@@ -16,7 +16,8 @@ a {
     --white: #fff;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -66,6 +67,42 @@ body {
     color: #ccc;
     text-decoration: none;
     font-size: 24px;
+    position: relative;
+    /* Required for positioning the pseudo-element */
+    transition: color 0.3s ease;
+    /* Optional: smooth color transition */
+}
+
+/* Line animation */
+.navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    /* Adjust distance from text */
+    left: 0;
+    width: 0;
+    height: 2px;
+    /* Thickness of the line */
+    background-color: #fff;
+    /* Color of the line */
+    transition: width 0.3s ease;
+    /* Smooth width transition */
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    /* Expands line to full width on hover */
+}
+
+/* Special handling for the contact button if needed */
+.btn-contact::after {
+    background-color: #000;
+    /* Dark line for light button */
+}
+
+.btn-contact:hover {
+    background: #f0f0f0;
+    /* Optional: slightly darker on hover */
 }
 
 .btn-contact {
@@ -425,7 +462,7 @@ body {
     font-family: var(--font1);
     margin-top: 20px;
     padding: 12px 30px;
-    border-radius: 25px;
+    border-radius: 20px;
     border: none;
     background: var(--black);
     color: var(--white);
@@ -462,6 +499,7 @@ footer {
     font-weight: 400;
     line-height: normal;
     padding-bottom: 20px;
+    padding-top: 30px;
 
 }
 
@@ -477,11 +515,53 @@ footer {
 }
 
 
+.footer-content a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 24px;
+    position: relative;
+    /* Required for positioning the pseudo-element */
+    transition: color 0.3s ease;
+    /* Optional: smooth color transition */
+}
+
+/* Line animation */
+.footer-content a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    /* Adjust distance from text */
+    left: 0;
+    width: 0;
+    height: 2px;
+    /* Thickness of the line */
+    background-color: #fff;
+    /* Color of the line */
+    transition: width 0.3s ease;
+    /* Smooth width transition */
+}
+
+.footer-content a:hover::after {
+    width: 100%;
+    /* Expands line to full width on hover */
+}
+
 .footer-content asd {
     display: inline;
     margin: 20px;
     word-spacing: 20px;
 }
+
+
+/* exterior.html */
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 1440px) {
@@ -501,7 +581,8 @@ footer {
     .cta-content h2 {
         font-size: 28px;
     }
-    .discover{
+
+    .discover {
         padding-left: 6vw;
     }
 }
@@ -621,7 +702,8 @@ footer {
 
     .abouttop,
     .bg-img1 {
-        display: none; /* remove decorative elements */
+        display: none;
+        /* remove decorative elements */
     }
 
     .about-text {
