@@ -231,7 +231,7 @@ body {
 
     display: flex;
     padding: 80px 0;
-    height: 120vh;
+    height: 135vh;
 
 
 }
@@ -324,6 +324,7 @@ body {
 
 .bg-img2 {
     background: linear-gradient(rgba(250, 250, 250, 0.6), rgba(250, 250, 250, 0.6)), url("./img/bgFaGal.svg") lightgray 50% center/cover no-repeat;
+    display: grid;
 
 }
 
@@ -413,11 +414,15 @@ body {
 
 /* CTA */
 .cta {
-    background: linear-gradient(rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url("./img/bgcta.png    ") no-repeat;
+    background: linear-gradient(rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url("./img/bgtouch2.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
 
     padding: 100px 20px;
     text-align: center;
     height: 40vw;
+    align-items: center;
+    justify-content: center;
 }
 
 .cta-content h2 {
@@ -428,7 +433,6 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-top: 120px;
     padding-left: 200px;
     padding-right: 200px;
 }
@@ -905,8 +909,9 @@ footer {
     }
 
     .gallery-item button {
-        width: 100%;
-        font-size: 18px;
+        width: 48%;
+        font-size: 11px;
+        padding: 8px;
     }
 
     /* ========== CTA ========== */
@@ -922,8 +927,9 @@ footer {
     }
 
     .cta button {
-        width: 100%;
-        padding: 15px;
+        width: 48%;
+        padding: 8px;
+        font-size: 11px;
     }
 
     /* ========== LOCATION ========== */
@@ -940,7 +946,9 @@ footer {
     }
 
     .location button {
-        width: 100%;
+        width: 50%;
+        padding: 8px;
+        font-size: 11px;
     }
 
     /* ========== FOOTER ========== */
