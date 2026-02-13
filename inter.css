@@ -161,13 +161,5 @@ hr {
         text-align: center;
     }
 
-    nav ul {
-        flex-direction: column;
-        gap: 15px;
-    }
 
-    .nav-content {
-        flex-direction: column;
-        gap: 20px;
-    }
 }
