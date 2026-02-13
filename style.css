@@ -16,6 +16,7 @@ a {
     --white: #fff;
 }
 
+
 html,
 body {
     width: 100%;
@@ -233,6 +234,9 @@ body {
     height: 120vh;
 
 
+}
+.discover img{
+    width: 100%;
 }
 
 .discover-content {
