@@ -193,7 +193,7 @@ body {
 .about-text h3 {
     color: #212121;
     font-family: "Droid Sans";
-    font-size: 32px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -203,7 +203,7 @@ body {
     color: #212121;
     text-align: justify;
     font-family: Varela;
-    font-size: 24px;
+    font-size: 21px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -346,7 +346,7 @@ body {
 }
 
 .facility-item {
-    background: rgba(250, 250, 250, 0.5);
+    background: rgba(250, 250, 250, 0);
     margin: 28px;
     padding: 2px;
     border-radius: 10px;
@@ -494,20 +494,20 @@ footer {
     color: #FFF;
     text-align: justify;
     font-family: var(--font2);
-    font-size: 24px;
+    font-size: 19px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-bottom: 20px;
-    padding-top: 30px;
+    padding-bottom: 5                                       px;
+    padding-top: 10px;
 
 }
 
-.footer-content a {
+.footer-content a:not(.sosial) {
     color: #FFF;
     text-align: justify;
     font-family: Varela;
-    font-size: 20px;
+    font-size: 19px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -518,7 +518,7 @@ footer {
 .footer-content a {
     color: #ccc;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 19px;
     position: relative;
     /* Required for positioning the pseudo-element */
     transition: color 0.3s ease;
